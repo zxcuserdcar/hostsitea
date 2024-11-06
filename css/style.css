@@ -1,0 +1,106 @@
+/* Основные стили страницы */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Контейнер и текст */
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Стиль для текста "Site under development" */
+.development-text {
+    font-size: 1.2em;
+    color: #ff6347; /* Цвет текста, можно изменить */
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Эффект при наведении на текст "Site under development" */
+.development-text:hover {
+    opacity: 1;
+}
+
+/* Заголовок и описание */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+    color: #1da1f2;
+}
+
+header p {
+    margin: 10px 0;
+    color: #ccc;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header p:hover {
+    transform: scale(1.00);
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Аватар */
+.avatar-container {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Социальные кнопки */
+.social-links {
+    margin-top: 20px;
+}
+
+.button {
+    color: #00acee;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+/* Анимация частиц */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
